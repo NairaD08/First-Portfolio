@@ -2,6 +2,7 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Bootcamp Portfolio</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
@@ -15,14 +16,15 @@
         <img src="./assets/images/Portfolio_pic.jpg" class="logo"/>
        
         <ul>
-          <li class="underline"><a href="#about-me"> About me</a></li>
-          <li class="underline"><a href="#work">Work</a></li>
-          <li class="underline"><a href="#contact-me">Contact Me</a></li>
-          <li class="underline"><a href="Resume">Resume</a></li>
+          <li  class="underline"><a href="#about-me"> About me</a></li>
+          <li  class="underline"><a href="#work">Work</a></li>
+          <li  class="underline"><a href="#contact-me">Contact Me</a></li>
+          <li  class="underline"><a href="Resume">Resume</a></li>
         </ul>
       </nav>
     </header>
     <main class="main">
+        <section>
       <figure class="figure">
         <img
           class="img"
@@ -31,37 +33,60 @@
 
         <figcaption class="text">Welcome To My Portfolio Page</figcaption>
       </figure>
+      </section>
 
-      <section class="sections">
-        <div class="left-box">
-            <h2 id="about-me">About Me</h2>
+      <section id="about-me" class="sectionaboutme">
+        <div class="leftboxaboutme">
+            <h2 id="me">About Me</h2>
         </div>
-        <div class="right-box">
+        <div class="rightboxaboutme">
             <p>My name is Naira Davtyan! I have decided to make a career change and
-                explore coding! I have 8 years of experience in banking. Although I don't have any experience in coding, I have a passion for learning and overcoming challanges.</p>
+                explore coding! Although my experience and knowledge in coding is limited, I have a passion for learning and overcoming challanges.</p>
         </div>
         </section>
 
-        <section class="sections">
-            <div class="left-box">
+       <section id="work" class="sectionwork">
+            <div class="leftboxwork">
                 <h2 id="work"> Work</h2>
             </div>
-            <div class="right-box">
-                <img src="./assets/images/Portfolio pic1.png" alt="picture"/>;
-                <img src="./assets/images/portfolio pic2.png" alt="pic 2"/>;
-                <img src="./assets/images/portfolio pic3.jpg" alt="pic3"/>;
-                <img src="./assets/images/portfolio pic4.webp" alt="pic4"/>;
-                <img src="./assets/images/portfolio pic 5.jpeg" alt="pic5"/>;
-        
+           <div class="rightboxwork">
+              <figure class="figure1">
+                <a href="https://nairad08.github.io/Challenge-1-Horiseon/">
+                <img id="picture1" src="./assets/images/portfolio pic 5.jpeg" alt="picture"/>
+                <figcaption class="text1">Surf Report</figcaption>
+              </a>
+              </figure>
+              <figure class="figure2">
+              <div class="pic2ndrow">
+              <img id="picture2" src="./assets/images/portfolio pic2.png" alt="pic 2"/>
+              <figcaption class="text2">Calculator</figcaption> 
+              </figure>
+              <figure class="figure3">
+                <img id="picture3" src="./assets/images/portfolio pic3.jpg" alt="pic3"/>
+                <figcaption class="text3">Led Wall</figcaption>
+             </figure> 
+               <!-- </div>
+                <figure class=container>
+                <div class="pic3rdrow">
+                <img id="picture4" src="./assets/images/portfolio pic4.webp" alt="pic4"/>
+                <figcaption class="text4">Pastel Puzzels</figcaption>
+      </figure>
+                <img id="picture5" src="./assets/images/porfolio6.png" alt="pic6"/>
+                <figcaption class="text5">Run Buddy</figcaption>
+      </figure> -->
+        </div>
 
-            </div>
+            </div> 
         </section>
+       <!-- <section>
+            resume
+        </section> -->
 
-        <section class="sections">
-            <div class="left-box">
-                <h2 id="contact-me">Contact Me</h2>
+        <section id="contact-me" class="sectioncontactme">
+            <div class="leftboxcontactme">
+                <h2 id="contactme">Contact Me</h2>
             </div>
-            <div class="right-box">
+            <div class="rightboxcontactme">
                 <div id="contact-list">
                     <ul class="contact-me-ul">
                         <li><a href="tel:999-999-9999">Phone</a></li>
@@ -71,12 +96,12 @@
                     </ul>
                 </div>
             </div>
-        </section>
+        </section> 
 
         
     <footer></footer>
 </body>
-</html>
+</html> 
 
 
         <!--<h2 class="h2"> About Me</h2>
@@ -125,6 +150,17 @@
         </p>
       </section>
     </main>
+    .rightboxwork{
+    
+    border-left: 1px solid rgb(48, 43, 43);
+    border-left-style:  dashed;
+    padding:70px;
+    margin-left: 0px;
+  margin-right: 50px;
+  border-left-width: 3px;
+  height: 20px;
+  background-color: blanchedalmond;
+}
 
     <aside id=about-me class="aside-about-me">
       <h2>About Me</h2>
