@@ -1,6 +1,6 @@
 # My-Bootcamp-Portfolio
 
-Welcome to my portfolio!
+Welcome to my Portfolio!
 
 ## Description
 
@@ -12,8 +12,6 @@ In this portfolio, you will find a collection of my projects, each demonstrating
 At the footer of the page, you will find my contact information, making it easy for you to reach out if you have any questions or opportunities for collaboration. Thank you for visiting my portfolio, and I hope you enjoy exploring my work!
 
 ## Final Product
+
 <img width="946" alt="image" src="https://github.com/user-attachments/assets/31503064-75a5-40b2-be9b-5c632da56f96">
 <img width="947" alt="image" src="https://github.com/user-attachments/assets/71a6e61a-076b-431a-a5f1-10fd4673be0b">
-
-
-
