@@ -2,11 +2,18 @@
   margin: 0;
   padding: 0;
 }
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-wrap: wrap;
+}
 
 html {
   scroll-behavior: smooth;
+  display: flex;
+  flex-wrap: wrap;
 }
-
 
 .header {
   background-color: rgb(48, 43, 43);
@@ -15,8 +22,7 @@ html {
   padding-bottom: 0px;
   display: flex;
   flex-direction: row;
-  
-  
+  flex-wrap: wrap;
 }
 
 .body {
@@ -24,19 +30,22 @@ html {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 16px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  
-  
 }
-.nav{
-    display: flex;
-    flex-direction: row;
-
-    width: 100%;
-    justify-content:space-around;
-    
-   
-
+.titleSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
 }
 .nav ul {
   display: flex;
@@ -46,9 +55,6 @@ html {
   list-style-type: none;
   padding: 30px;
   font-size: 20px;
-
- 
-  
 }
 
 .nav a {
@@ -57,11 +63,8 @@ html {
   text-decoration: none;
   margin-left: 20px;
   margin-right: 20px;
- 
-  
 }
 .h1 {
-  
   padding-top: 10px;
   padding-bottom: 10px;
   color: rgb(48, 43, 43);
@@ -74,7 +77,6 @@ html {
   padding-right: 8px;
   margin-left: 0;
   border-radius: 10px;
- 
 }
 .logo {
   width: 65px;
@@ -82,7 +84,6 @@ html {
   margin-left: 10px;
   margin-top: 10px;
   border-radius: 5px;
-  
 }
 .figure {
   position: relative;
@@ -104,328 +105,241 @@ html {
   color: rgb(73, 163, 193);
 }
 
-
-.leftboxcontactme{
-
-    width: 200px;
-    padding:100px;
-    text-decoration: wavy;
-    display: flex;
-
+.leftboxcontactme {
+  width: 200px;
+  padding: 100px;
+  text-decoration: wavy;
+  display: flex;
 }
 
-.sectionaboutme{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: baseline;
+.sectionaboutme {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  align-items: baseline;
+
+  width: 100%;
 }
 
-.leftboxaboutme{
-    
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    
-    padding: 50px;
-    height: 70px;
-    border-right: 2px solid rgb(48, 43, 43);
-    border-right-style:  dashed;
-    align-items: center; 
-    display: flex;
+.leftboxaboutme {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+
+  padding: 50px;
+  height: 70px;
+  border-right: 2px solid rgb(48, 43, 43);
+  border-right-style: dashed;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.rightboxaboutme{
-    padding: 50px;
+.rightboxaboutme {
+  padding: 50px;
+  width: 70%;
 }
 
-.rightboxaboutme p{
-    padding: 30px;
-    font-size: 18px;
-    width:800px;
+.rightboxaboutme p {
+  padding: 30px;
+  font-size: 18px;
+  width: 100%;
 }
 
-#me{
-    font-weight:900;
-    font-size: 30px;
-    color: rgb(48, 43, 43); 
+#me {
+  font-weight: 900;
+  font-size: 30px;
+  color: rgb(48, 43, 43);
 }
 
-.sectionwork{
-    display: flex;
-    flex-wrap: wrap;
-    
+.sectionwork {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 100%;
+  max-width: 3000px;
 }
-.leftboxwork{
-    padding: 80px;
-    margin:10px;
-    line-height: 100px;
-    border-right: 2px solid rgb(48, 43, 43);
-    border-right-style:  dashed;  
-    display: flex;
-    justify-content: l;
-    
+.leftboxwork {
+  padding: 80px;
+  margin: 10px;
+  line-height: 100px;
+  border-right: 2px solid rgb(48, 43, 43);
+  border-right-style: dashed;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-#work{
-    font-weight:900;
-    font-size: 32px;
-    text-align: center;
-    color: rgb(48, 43, 43); 
+#work {
+  font-weight: 900;
+  font-size: 32px;
+  text-align: center;
+  color: rgb(48, 43, 43);
 }
 
-.rightboxwork{
-    margin-left: 80px;
-    padding: 40px;
-    padding-left: 40px;
-    padding-right: 80px;
-    align-items: center;
-    display: flex;
-    justify-content: right
- ;}
-
-
-
-#picture1{
-    width: 100%;
-    max-width: 800px;
-    border-radius: 10px;  
-    display: flex;
-    
-    
-}
-.figure1{
-    display: flex;
-    
-    justify-content:left;
-    right: 40px;;
-}
-.text1{
-    position: absolute;
-    color: rgb(48, 43, 43);
-    background-color: rgb(73, 163, 193);
-    padding: 5px;
-    font-size: 30px;
-    bottom:30px;
-    left:40px;
-    border-radius: 10px;
- }
-
-.figure2{
-    position: relative;
-    right:230px;
-}
-#picture2{
-    width: 100%;
-    max-width: 360px;
-    height: 140px;
-    border-radius: 10px;
-
-}
-.text2{
-    position:absolute;
-    left: 228px;
-    font-size: 20px;
-    bottom:13px;
-    color: rgb(48, 43, 43);
-    background-color: rgb(73, 163, 193);
-    padding: 0px;
-    border-radius: 5px;
-}
-.figure3{
-    position: relative;
-    left:150px;
-    bottom:147px;
-    
-}
-#picture3{
-    width: 100%;
-    max-width: 360px;
-    height: 140px;
-    border-radius: 10px;
-}
-.text3{
-    position:absolute;
-    bottom: 13px;
-    font-size: 20px;
-    left:232px;
-    color: rgb(48, 43, 43);
-    background-color: rgb(73, 163, 193);
-    padding: 0px;
-    border-radius: 5px;
-}
-#picture4{
-    width: 100%;
-    max-width: 360px;
-    height: 120px;
-    border-radius: 10px;
+.rightboxwork {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  flex-direction: column;
+  width: 70%;
 }
 
-#picture5{
-    width: 100%;
-    max-width: 360px;
-    height: 120px;
-    border-radius: 10px;
-}
-.sectioncontactme{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
-    flex-wrap: wrap;
-
-}
-.leftboxcontactme{
-    margin: 10px;
-    padding: 30px;
-    border-right: 2px solid rgb(48, 43, 43);
-    border-right-style:  dashed;
-    line-height: 70px;
-}
-.rightboxcontactme{
-   
-}
-#contactme{
-    font-weight:900;
-    font-size: 32px;
-    text-align: center;
-    color: rgb(48, 43, 43); 
-    text-shadow: 20px; 
+#picture1 {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
+.text1 {
+  color: rgb(48, 43, 43);
+  background-color: rgb(73, 163, 193);
+  padding: 5px;
+  font-size: 30px;
+  bottom: 30px;
+  left: 40px;
+  border-radius: 10px;
+}
+.test {
+  display: flex;
+  flex-direction: row;
+}
+.figure2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+#picture2 {
+  width: 330px;
 
-.contact-me-ul{
-    display: flex;
-    font-size: 20px;
-    list-style: none;
-    flex-wrap: wrap;
+  height: 180px;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.text2 {
+  font-size: 20px;
+  color: rgb(48, 43, 43);
+  background-color: rgb(73, 163, 193);
+  border-radius: 5px;
+  width: 110px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+  margin-left: 110px;
+  margin-top: 5px;
+}
+.figure3 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 15px;
+}
+#picture3 {
+  display: flex;
+  width: 330px;
+  max-width: 360px;
+  height: 180px;
+  border-radius: 20px;
+  flex-wrap: wrap;
+}
+.text3 {
+  font-size: 20px;
+  color: rgb(48, 43, 43);
+  background-color: rgb(73, 163, 193);
+  border-radius: 5px;
+  width: 110px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+  margin-left: 110px;
+  margin-top: 5px;
+}
+.sectioncontactme {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.leftboxcontactme {
+  margin: 10px;
+  padding: 30px;
+  border-right: 2px solid rgb(48, 43, 43);
+  border-right-style: dashed;
+  line-height: 70px;
+}
+.rightboxcontactme {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  flex-direction: column;
+  width: 70%;
+}
+
+#contactme {
+  font-weight: 900;
+  font-size: 32px;
+  text-align: center;
+  color: rgb(48, 43, 43);
+  text-shadow: 20px;
+}
+#contact-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-me-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 20px;
+  list-style: none;
+  flex-wrap: wrap;
 }
 
 .contact-me-ul li {
-    padding-bottom: 15px;
-    padding: 80px;
-    font-weight:bolder;
+  padding-bottom: 15px;
+  padding: 70px;
+  font-weight: bolder;
 }
 
-.wrapper-main{
-    width: 100%;
-}
-@media only screen and (max-width: 600px){
-    .wrapper-main{
-    width: 100%;
-}
+#wrapper-main {
+  width: 100%;
 }
 
-@media only screen and (min-width: 601px){
-    .wrapper-main{
+@media only screen and (max-width: 600px) {
+  .wrapper-main {
     width: 100%;
-}
+  }
 }
 
-@media only screen and (min-width: 768px){
-    .wrapper-main{
+@media only screen and (min-width: 601px) {
+  .wrapper-main {
     width: 100%;
-}
+  }
 }
 
-@media only screen and (min-width: 992px){
-    .wrapper-main{
+@media only screen and (min-width: 768px) {
+  .wrapper-main {
     width: 100%;
-}
+  }
 }
 
-@media only screen and (min-width: 1200px){
-    .wrapper-main{
+@media only screen and (min-width: 992px) {
+  .wrapper-main {
     width: 100%;
-}
-}
-/* 
-.rightboxwork{
-    margin-left: 80px;
-    padding: 40px;
-    padding-left: 40px;
-    padding-right: 80px;
-    align-items: center;
+  }
 }
 
-
-
-#picture1{
+@media only screen and (min-width: 1200px) {
+  .wrapper-main {
     width: 100%;
-    max-width: 800px;
-    border-radius: 10px;  
-    display: flex;
-    
+  }
 }
-.figure1{
-    position: relative;
-    right: 40px;;
-}
-.text1{
-    position: absolute;
-    color: rgb(48, 43, 43);
-    background-color: rgb(73, 163, 193);
-    padding: 5px;
-    font-size: 30px;
-    bottom:30px;
-    left:40px;
-    border-radius: 10px;
- }
-
-.figure2{
-    position: relative;
-    right:230px;
-}
-#picture2{
-    width: 100%;
-    max-width: 360px;
-    height: 140px;
-    border-radius: 10px;
-
-}
-.text2{
-    position:absolute;
-    left: 228px;
-    font-size: 20px;
-    bottom:13px;
-    color: rgb(48, 43, 43);
-    background-color: rgb(73, 163, 193);
-    padding: 0px;
-    border-radius: 5px;
-}
-.figure3{
-    position: relative;
-    left:150px;
-    bottom:147px;
-    
-}
-#picture3{
-    width: 100%;
-    max-width: 360px;
-    height: 140px;
-    border-radius: 10px;
-}
-.text3{
-    position:absolute;
-    bottom: 13px;
-    font-size: 20px;
-    left:232px;
-    color: rgb(48, 43, 43);
-    background-color: rgb(73, 163, 193);
-    padding: 0px;
-    border-radius: 5px;
-}
-#picture4{
-    width: 100%;
-    max-width: 360px;
-    height: 120px;
-    border-radius: 10px;
-}
-
-#picture5{
-    width: 100%;
-    max-width: 360px;
-    height: 120px;
-    border-radius: 10px;
-} */
